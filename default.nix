@@ -222,11 +222,12 @@ let
 in pkgs.mkShell {
   name = "env";
   buildInputs = with pkgs; [
-    bash # Useful for debugging.
+    bash
     git
     glibcLocales # Avoids error in `devtools::check()`.
     haskellPackages.pandoc
     haskellPackages.pandoc-citeproc
+    hugo
     julia-fhs
     R-with-my-packages
   ];
