@@ -54,11 +54,11 @@ let
     packages = my-r-packages;
   };
 
-  julia_14 = pkgs.stdenv.mkDerivation {
-    name = "julia_14";
+  julia_15 = pkgs.stdenv.mkDerivation {
+    name = "julia_15";
     src = pkgs.fetchurl {
-      url = "https://julialang-s3.julialang.org/bin/linux/x64/1.4/julia-1.4.2-linux-x86_64.tar.gz";
-      sha256 = "0a2w2q3ddggnsfxcxa9irzb23x7c7q8v3l00jzl101r64fz12wyp";
+      url = "https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz";
+      sha256 = "14fvrpgdqm1mgq112fpqwgna9f0fib97a4l6k3hgqjj7z1vgcymy";
     };
     installPhase = ''
       mkdir $out
@@ -140,7 +140,7 @@ let
     # cudnn_cudatoolkit_10_0
     # linuxPackages.nvidia_x11
 
-    julia_14
+    julia_15
 
     # Arpack.jl
     arpack
