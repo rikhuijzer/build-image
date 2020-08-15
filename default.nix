@@ -39,6 +39,7 @@ let
       forestplot
       git2r
       gridExtra
+      openxlsx
       papaja
       pwr
       rmdfiltr
